@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getProducts } from '../services/api';
-import ProductCard from '../components/ProductCard';
+import { ProductCard } from '../components/ProductCard';
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -9,7 +9,7 @@ export default function Products() {
 
   useEffect(() => {
     getProducts()
-      .then(data => setProducts(data))
+      .then(data => setProducts(data.products || []))
       .catch(err => setError(err.message))
       .finally(() => setLoading(false));
   }, []);

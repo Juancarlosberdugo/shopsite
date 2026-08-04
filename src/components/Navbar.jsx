@@ -41,15 +41,7 @@ export const Navbar = () => {
             </li>
           </ul>
           <div className="d-flex align-items-center text-light gap-3">
-            <div className="d-flex align-items-center gap-2">
-              <img
-                src={user?.image || 'https://via.placeholder.com/35'}
-                alt={user?.username}
-                className="rounded-circle border"
-                style={{ width: '35px', height: '35px', objectFit: 'cover' }}
-              />
-              <span className="small">Hola, <strong>{user?.firstName || user?.username}</strong></span>
-            </div>
+            <span className="small">Hola, <strong>{user?.firstName || user?.username}</strong></span>
             <button onClick={handleLogout} className="btn btn-outline-danger btn-sm">
               Cerrar Sesión
             </button>

@@ -92,7 +92,6 @@ export const ProductDetailPage = () => {
           </div>
 
           <div className="mb-4">
-            <span className="badge bg-warning text-dark me-2">★ {product.rating}</span>
             <span className="small text-muted">Stock disponible: {product.stock} unidades</span>
           </div>
 
