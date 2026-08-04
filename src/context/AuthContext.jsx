@@ -29,6 +29,7 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
     localStorage.removeItem('shoppanel_user');
     localStorage.removeItem('shoppanel_token');
+    alert ('Sesión cerrada correctamente');
   };
 
   return (
