@@ -1,12 +1,12 @@
 const BASE_URL = 'https://dummyjson.com';
 
 export const formatCOP = (value) =>
-  new Intl.NumberFormat('es-CO', {
-    style: 'currency',
-    currency: 'COP',
-    maximumFractionDigits: 0
-  }).format(value);
-
+  new Intl.NumberFormat("es-CO", {
+    style: "currency",
+    currency: "COP",
+    maximumFractionDigits: 0,
+  }).format(value * 4200);
+  
 const productTranslations = {
   'Essence Mascara Lash Princess': {
     title: 'Máscara de Pestañas Princess',
